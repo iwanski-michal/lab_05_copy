@@ -57,17 +57,17 @@ public class Main {
 
         depositJanusza.setSourceBankAccount(kontoJanusza);
         depositJanusza.setMoney(1000.00);
-        depositJanusza.setDate(LocalDateTime.now());
+        depositJanusza.setDate(LocalDateTime.now().minusDays(1));
 
         BankAccountOperation depositGrazyny = new BankAccountOperation(BankOperationType.DEPOSIT);
         depositGrazyny.setSourceBankAccount(kontoGrazyny);
         depositGrazyny.setMoney(1300);
-        depositGrazyny.setDate(LocalDateTime.now());
+        depositGrazyny.setDate(LocalDateTime.now().minusDays(1));
 
         BankAccountOperation depositZdzislawa = new BankAccountOperation(BankOperationType.DEPOSIT);
         depositZdzislawa.setSourceBankAccount(kontoZdzislawa);
         depositZdzislawa.setMoney(900);
-        depositZdzislawa.setDate(LocalDateTime.now());
+        depositZdzislawa.setDate(LocalDateTime.now().minusDays(1));
 
 
         /**
